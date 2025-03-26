@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="200" viewBox="0 0 800 200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g fill="#FFFFFF">
+        <!-- Diamond shape -->
+        <path d="M100 20 L150 100 L100 180 L50 100 Z"/>
+        <!-- Text -->
+        <text x="200" y="120" font-family="Arial" font-size="100" font-weight="bold">myHCP.ai</text>
+    </g>
+</svg> 

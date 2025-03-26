@@ -10,16 +10,16 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          50: '#f0f7ff',
-          100: '#e0efff',
-          200: '#b8dfff',
-          300: '#7cc3ff',
-          400: '#36a4ff',
-          500: '#0078ff', // Main brand color
-          600: '#005ecc',
-          700: '#0047a5',
-          800: '#003380',
-          900: '#002966',
+          50: '#f5f3ff',
+          100: '#ede9fe',
+          200: '#ddd6fe',
+          300: '#c4b5fd',
+          400: '#a78bfa',
+          500: '#8b5cf6',
+          600: '#7c3aed',  // This is close to your logo color
+          700: '#6d28d9',
+          800: '#5b21b6',
+          900: '#4c1d95',
         },
         secondary: {
           50: '#f5f6ff',
@@ -33,14 +33,14 @@ const config: Config = {
           800: '#3730a3',
           900: '#312e81',
         },
-        accent: '#FF6B00', // Orange accent color
+        accent: '#7c3aed',
         neutral: {
           850: '#1f2937',
         },
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        display: ['var(--font-montserrat)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-inter)'],
+        display: ['var(--font-montserrat)'],
       },
       boxShadow: {
         'inner-lg': 'inset 0 2px 4px 0 rgb(0 0 0 / 0.05)',

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, Montserrat } from 'next/font/google'
+import Image from 'next/image'
 import './globals.css'
 
 const inter = Inter({ 
@@ -27,21 +28,25 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${montserrat.variable}`}>
       <body className="min-h-screen bg-gray-50 font-sans">
-        <header className="bg-white border-b border-gray-200">
+        <header className="bg-primary-600 text-white border-b border-primary-700">
           <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <div className="text-primary-500 font-display font-bold text-2xl">
-                my<span className="text-accent">HCP</span>.ai
-              </div>
-            </div>
+            <a href="/" className="flex items-center space-x-2">
+              <Image
+                src="/images/myhcp-logo.svg"
+                alt="myHCP.ai Logo"
+                width={120}
+                height={30}
+                className="h-8 w-auto"
+              />
+            </a>
             <div className="flex items-center space-x-6">
-              <a href="/" className="text-neutral-850 hover:text-primary-500 font-medium transition-colors">
+              <a href="/" className="text-white hover:text-primary-200 font-medium transition-colors">
                 Home
               </a>
-              <a href="#" className="text-neutral-850 hover:text-primary-500 font-medium transition-colors">
+              <a href="#" className="text-white hover:text-primary-200 font-medium transition-colors">
                 About
               </a>
-              <button className="bg-primary-500 text-white px-4 py-2 rounded-md hover:bg-primary-600 transition-colors font-medium">
+              <button className="bg-white text-primary-600 px-4 py-2 rounded-md hover:bg-primary-50 transition-colors font-medium">
                 Get Started
               </button>
             </div>
@@ -50,13 +55,17 @@ export default function RootLayout({
         <main className="min-h-[calc(100vh-4rem)]">
           {children}
         </main>
-        <footer className="bg-neutral-850 text-white py-8">
+        <footer className="bg-primary-600 text-white py-8">
           <div className="container mx-auto px-4">
             <div className="flex justify-between items-center">
-              <div className="font-display font-bold text-xl">
-                my<span className="text-accent">HCP</span>.ai
-              </div>
-              <div className="text-sm text-gray-400">
+              <Image
+                src="/images/myhcp-logo.svg"
+                alt="myHCP.ai Logo"
+                width={100}
+                height={25}
+                className="h-6 w-auto"
+              />
+              <div className="text-sm text-primary-200">
                 © 2024 myHCP.ai. All rights reserved.
               </div>
             </div>
