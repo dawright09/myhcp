@@ -42,15 +42,12 @@ const oncologists = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <main className="min-h-screen bg-gradient-to-b from-primary-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-display font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent mb-4">
-            Practice Your CLL Sales Skills
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-600 mb-4">
+            Improve CLL Sales Fluency with myHCP
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Enhance your interactions with healthcare providers through realistic conversations about CLL treatment options.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -60,7 +57,7 @@ export default function Home() {
               href={`/practice/${provider.id}`}
               className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden group flex items-center p-6 gap-6"
             >
-              <div className="relative w-24 h-24 shrink-0 rounded-full overflow-hidden ring-2 ring-primary-100">
+              <div className="relative w-24 h-24 shrink-0 rounded-full overflow-hidden ring-2 ring-primary-200">
                 <Image
                   src={provider.image}
                   alt={provider.imageAlt}
@@ -75,7 +72,7 @@ export default function Home() {
                   {provider.name}
                 </h3>
                 <p className="text-sm text-gray-500 mb-2">{provider.specialty}</p>
-                <div className="bg-primary-50 text-primary-700 text-sm px-3 py-1 rounded-full inline-block mb-3">
+                <div className="bg-primary-100 text-primary-700 text-sm px-3 py-1 rounded-full inline-block mb-3">
                   {provider.treatmentPreference}
                 </div>
                 <p className="text-gray-600 text-sm">{provider.description}</p>
@@ -87,7 +84,7 @@ export default function Home() {
         <div className="text-center">
           <Link
             href="/practice/sarah-chen"
-            className="inline-block bg-primary-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-primary-700 transition-colors"
+            className="inline-block bg-primary-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-primary-700 transition-colors shadow-md hover:shadow-lg"
           >
             Start Practicing Now
           </Link>
